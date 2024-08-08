@@ -5,32 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/galeria.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <title>Galería</title>
+    <title>Ventana Modal</title>
 </head>
 <body>
     <div class="container">
         <h1>Galería de Img en Ventana Modal</h1>
         <p>La imagen seleccionada se mostrará en una ventana modal</p>
         <div class="gallery">
-            <img class="thumbnail" src="img/clay-banks-nANHauFORac-unsplash.jpg" alt="Img 1" data-full="img/clay-banks-nANHauFORac-unsplash.jpg">
-            <img class="thumbnail" src="img/kellen-riggin-ZghWUaaq1xs-unsplash.jpg" alt="Img 2" data-full="img/kellen-riggin-ZghWUaaq1xs-unsplash.jpg">
-            <img class="thumbnail" src="img/saile-ilyas-zkSBSQ0lmj0-unsplash.jpg" alt="Img 3" data-full="img/saile-ilyas-zkSBSQ0lmj0-unsplash.jpg">
-            <img class="thumbnail" src="img/samsung-memory-_zpj6jT5s5A-unsplash.jpg" alt="Img 4" data-full="img/samsung-memory-_zpj6jT5s5A-unsplash.jpg">
+            <img class="thumbnail" src="img/mini/clay-banks-nANHauFORac-unsplash_mini.jpg" alt="Img 1" data-full="img/mini/clay-banks-nANHauFORac-unsplash_mini.jpg">
+            <img class="thumbnail" src="img/mini/kellen-riggin-ZghWUaaq1xs-unsplash_mini.jpg" alt="Img 2" data-full="img/mini/kellen-riggin-ZghWUaaq1xs-unsplash_mini.jpg">
+            <img class="thumbnail" src="img/mini/saile-ilyas-zkSBSQ0lmj0-unsplash_mini.jpg" alt="Img 3" data-full="img/mini/saile-ilyas-zkSBSQ0lmj0-unsplash_mini.jpg">
+            <img class="thumbnail" src="img/mini/samsung-memory-_zpj6jT5s5A-unsplash_mini.jpg" alt="Img 4" data-full="img/mini/samsung-memory-_zpj6jT5s5A-unsplash_mini.jpg">
+            <!-- data-full para leer los datos desde JavaScript. Los data-"x" se pueden completar y nombrar como uno quiera -->
         </div>
     </div>
-<!-- 
-    <main>
-        <div class="container">
-            <img class="column1" id="galeria" src="img/samsung-memory-_zpj6jT5s5A-unsplash.jpg" alt="">
-            <div class="imgs">
-                <img class="galeria-imgs" src="img/clay-banks-nANHauFORac-unsplash.jpg" alt="">
-                <img class="galeria-imgs" src="img/kellen-riggin-ZghWUaaq1xs-unsplash.jpg" alt="">
-                <img class="galeria-imgs" src="img/saile-ilyas-zkSBSQ0lmj0-unsplash.jpg" alt="">
-                <img class="galeria-imgs" src="img/samsung-memory-_zpj6jT5s5A-unsplash.jpg" alt="">
-            </div>
+
+    <!-- Contenido de la ventana modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img src="" alt="Img Ampliada" class="modal-image">
         </div>
-    </main>
--->
+    </div>
 
     <script src="js/galeria.js"></script>
 </body>
