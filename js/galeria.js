@@ -26,9 +26,7 @@ closeBtn.onclick = () => {
 }
 
 
-
 // ESTO HACE LO MISMO QUE ARRIBA
-
-// closeBtn.addEventListener ('click', () => {
-//     modal.style.display = "none"
-// })
+    // closeBtn.addEventListener ('click', () => {
+    //     modal.style.display = "none"
+    // })
